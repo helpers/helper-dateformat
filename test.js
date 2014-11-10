@@ -20,25 +20,25 @@ function dateformat(format) {
 
 describe('date', function () {
   it('should return a formatted moment date:', function () {
-    helper().should.eql(dateformat('MMMM DD, YYYY'));
+    helper().should.eql(dateformat('mmmm dd, yyyy'));
   });
 
   it('should return a formatted dateformat date:', function () {
-    helper('MMMM DD, YYYY').should.eql(dateformat('MMMM DD, YYYY'));
+    helper('mmmm dd, yyyy').should.eql(dateformat('mmmm dd, yyyy'));
   });
 
   it('should work as a lodash helper:', function () {
-    _.template('<%= date("MMMM DD, YYYY") %>', {}, {imports: {date: helper}}).should.eql(dateformat('MMMM DD, YYYY'));
-    _.template('<%= date("MMMM") %>', {}, {imports: {date: helper}}).should.eql(dateformat('MMMM'));
-    _.template('<%= date("MMMM DD, YYYY") %>', {}, {imports: {date: helper}}).should.not.eql(dateformat('MMMM'));
+    _.template('<%= date("mmmm dd, yyyy") %>', {}, {imports: {date: helper}}).should.eql(dateformat('mmmm dd, yyyy'));
+    _.template('<%= date("mmmm") %>', {}, {imports: {date: helper}}).should.eql(dateformat('mmmm'));
+    _.template('<%= date("mmmm dd, yyyy") %>', {}, {imports: {date: helper}}).should.not.eql(dateformat('mmmm'));
   });
 
   it('should work as a handlebars helper:', function () {
     handlebars.registerHelper('date', helper);
 
-    handlebars.compile('{{date "MMMM DD, YYYY"}}')().should.eql(dateformat('MMMM DD, YYYY'));
-    handlebars.compile('{{date "MMMM"}}')().should.eql(dateformat('MMMM'));
-    handlebars.compile('{{date "MMMM"}}')().should.not.eql(dateformat('MMMM DD, YYYY'));
+    handlebars.compile('{{date "mmmm dd, yyyy"}}')().should.eql(dateformat('mmmm dd, yyyy'));
+    handlebars.compile('{{date "mmmm"}}')().should.eql(dateformat('mmmm'));
+    handlebars.compile('{{date "mmmm"}}')().should.not.eql(dateformat('mmmm dd, yyyy'));
   });
 });
 
