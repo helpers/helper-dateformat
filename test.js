@@ -1,5 +1,5 @@
 /*!
- * helper-date <https://github.com/jonschlinkert/helper-date>
+ * helper-dateformat <https://github.com/jonschlinkert/helper-dateformat>
  *
  * Copyright (c) 2014 Jon Schlinkert, contributors.
  * Licensed under the MIT License
@@ -18,7 +18,7 @@ function dateformat(format) {
   return date(new Date(), format);
 }
 
-describe('date', function () {
+describe('dateformat', function () {
   it('should return a formatted moment date:', function () {
     helper().should.eql(dateformat('mmmm dd, yyyy'));
   });
