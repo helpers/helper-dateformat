@@ -1,7 +1,7 @@
 {
   "name": "helper-dateformat",
   "description": "Template helper for adding formatted dates using node-dateformat. Works with Handlebars, Lo-Dash, underscore, or any template engine that supports helper functions. Also compatible with verb, assemble and Template.",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "homepage": "https://github.com/helpers/helper-dateformat",
   "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
   "repository": "helpers/helper-dateformat",
