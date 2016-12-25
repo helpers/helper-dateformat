@@ -20,12 +20,15 @@
     "test": "mocha"
   },
   "dependencies": {
-    "dateformat": "^1.0.8"
+    "dateformat": "^2.0.0",
+    "kind-of": "^3.1.0"
   },
   "devDependencies": {
-    "handlebars": "^2.0.0",
+    "gulp-format-md": "^0.1.11",
+    "handlebars": "^4.0.6",
     "lodash": "^2.4.1",
-    "should": "^4.2.1"
+    "mocha": "^3.2.0",
+    "verb-generate-readme": "^0.2.0"
   },
   "keywords": [
     "assemble",
@@ -40,5 +43,36 @@
     "templates",
     "underscore",
     "verb"
-  ]
+  ],
+  "verb": {
+    "toc": false,
+    "layout": "default",
+    "tasks": [
+      "readme"
+    ],
+    "plugins": [
+      "gulp-format-md"
+    ],
+    "related": {
+      "list": [
+        "handlebars-helpers",
+        "template-helpers",
+        "helper-date"
+      ]
+    },
+    "reflinks": [
+      "generate",
+      "generate-helper",
+      "verb",
+      "verb-generate-readme",
+      "assemble",
+      "handlebars",
+      "lodash",
+      "templates",
+      "underscore"
+    ],
+    "lint": {
+      "reflinks": true
+    }
+  }
 }
