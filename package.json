@@ -3,29 +3,21 @@
   "description": "Template helper for adding formatted dates using node-dateformat. Works with Handlebars, Lo-Dash, underscore, or any template engine that supports helper functions. Also compatible with verb, assemble and Template.",
   "version": "0.1.0",
   "homepage": "https://github.com/helpers/helper-dateformat",
-  "author": {
-    "name": "Jon Schlinkert",
-    "url": "https://github.com/jonschlinkert"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/helpers/helper-dateformat.git"
-  },
+  "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
+  "repository": "helpers/helper-dateformat",
   "bugs": {
     "url": "https://github.com/helpers/helper-dateformat/issues"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/helpers/helper-dateformat/blob/master/LICENSE-MIT"
-    }
+  "license": "MIT",
+  "files": [
+    "index.js"
   ],
   "main": "index.js",
   "engines": {
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "mocha -R spec"
+    "test": "mocha"
   },
   "dependencies": {
     "dateformat": "^1.0.8"
@@ -37,11 +29,15 @@
   },
   "keywords": [
     "assemble",
+    "dateformat",
     "handlebars",
     "helper",
+    "helpers",
     "lo-dash",
     "lodash",
+    "render",
     "template",
+    "templates",
     "underscore",
     "verb"
   ]
